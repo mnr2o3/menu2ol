@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#315b49">
+  <meta name="description" content="Рабочее меню кофейни: напитки, блюда, заготовки, составы и поиск по меню.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Меню кофейни">
+  <meta property="og:title" content="Меню кофейни">
+  <meta property="og:description" content="Напитки, блюда, заготовки и составы в удобном справочнике.">
+  <meta property="og:url" content="https://mnr2o3.github.io/menu2ol/">
+  <meta property="og:image" content="https://mnr2o3.github.io/menu2ol/social-preview.png">
+  <meta property="og:image:secure_url" content="https://mnr2o3.github.io/menu2ol/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Меню кофейни — напитки, блюда и составы">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Меню кофейни">
+  <meta name="twitter:description" content="Напитки, блюда, заготовки и составы в удобном справочнике.">
+  <meta name="twitter:image" content="https://mnr2o3.github.io/menu2ol/social-preview.png">
+  <title>Меню кофейни</title>
+  <link rel="stylesheet" href="styles.css?v=20260610-kbzhu">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__inner">
+      <p class="eyebrow">Рабочий справочник</p>
+      <h1>Меню кофейни</h1>
+      <div class="hero__actions">
+        <a class="button button--primary" href="menu.pdf?v=20260610-kbzhu" target="_blank">Открыть PDF</a>
+        <a class="button" href="#navigation">Перейти к разделам</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar" id="navigation">
+    <div class="toolbar__inner">
+      <label class="search">
+        <span class="search__icon" aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Найти блюдо или ингредиент…" autocomplete="off">
+      </label>
+      <nav class="chips" aria-label="Разделы меню">
+        <a href="#tea">Чай и помол</a>
+        <a href="#bar">Бар</a>
+        <a href="#wraps">Врапы</a>
+        <a href="#grills">Гриль-чизы</a>
+        <a href="#porridge">Каши</a>
+        <a href="#syrniki">Сырники</a>
+        <a href="#prep">Заготовки</a>
+        <a href="#desserts">Десерты</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="menu"></main>
+  <p class="empty" id="empty" hidden>Ничего не найдено. Попробуйте другое слово.</p>
+
+  <a class="to-top" href="#top" aria-label="Наверх">↑</a>
+  <script src="app.js?v=20260610-kbzhu"></script>
+</body>
+</html>
