@@ -1,6 +1,6 @@
 const menu = [
   {
-    id: "tea", title: "Чай и помол", note: "Быстрая шпаргалка для бара.", type: "tables",
+    id: "tea", title: "Чай и помол", note: "", type: "tables",
     tea: [
       ["Белый чай", "4", "6", "90–95 °C", "4 мин"],
       ["Зеленый чай", "3", "5", "80–85 °C", "2–3 мин"],
@@ -11,7 +11,7 @@ const menu = [
     grind: [["Турка", "3"], ["Гейзер", "4–5"], ["Эспрессо", "4,1"], ["Аэропресс", "5"], ["Воронка", "7"], ["Чашка", "7,5"], ["Фильтр", "8,1 на 0,6"], ["Френч-пресс", "9"]]
   },
   {
-    id: "wraps", title: "Врапы", note: "Все позиции на одном экране.", cards: [
+    id: "wraps", title: "Врапы", note: "", cards: [
       {name: "Кура", items: ["Тортилья", "Соус тоннато", "Моцарелла", "Шпинат", "Курица су-вид", "Кинза", "Кукуруза"]},
       {name: "Тунец", items: ["Тортилья", "Творожный сыр", "Моцарелла", "Шпинат", "Тунец консервированный", "Вяленые томаты"]},
       {name: "Бекон", items: ["Тортилья", "Творожный сыр", "Моцарелла", "Шпинат", "Бекон", "Укроп", "Трюфельное масло"]},
@@ -19,7 +19,7 @@ const menu = [
     ]
   },
   {
-    id: "grills", title: "Гриль-чизы", note: "Пять составов рядом для быстрого сравнения.", cards: [
+    id: "grills", title: "Гриль-чизы", note: "", cards: [
       {name: "Курица-бекон", items: ["Тартин", "Соус гриль-чиз", "Шпинат", "Сыр тертый", "Курица су-вид", "Бекон"]},
       {name: "Говядина", items: ["Тартин", "Соус гриль-чиз", "Шпинат", "Сыр тертый", "Говядина", "Халапеньо"]},
       {name: "Чоризо", items: ["Тартин", "Соус том ям", "Шпинат", "Сыр тертый", "Чоризо"]},
@@ -28,7 +28,7 @@ const menu = [
     ]
   },
   {
-    id: "porridge", title: "Каши", note: "Приготовление в микроволновке: 4 минуты.", recipes: [
+    id: "porridge", title: "Каши", note: "", recipes: [
       {name: "Со сгущенкой из авокадо", image: "assets/porridge.jpeg", items: [["Хлопья", "50 г"], ["Молоко", "150 г"], ["Вода", "50 г"], ["Сахар", "10 г"], ["Соль", "1 г"], ["Сгущенка из авокадо", "60 г"], ["Битая вишня", "20 г"], ["Посыпка: бисквит / грецкий орех", "20 г"]]},
       {name: "Со сгущенкой из тыквы", items: [["Хлопья", "50 г"], ["Молоко", "150 г"], ["Вода", "50 г"], ["Сахар", "10 г"], ["Соль", "1 г"], ["Сгущенка из тыквы", "70 г"], ["Семечки тыквенные", "30 г"]]}
     ]
@@ -41,7 +41,7 @@ const menu = [
     ]
   },
   {
-    id: "prep", title: "Заготовки", note: "Ягоды и соусы.", subsections: [
+    id: "prep", title: "Заготовки", note: "", subsections: [
       {title: "Битые ягоды", recipes: [
         {name: "Битая клубника", items: [["Клубника", "200 г"], ["Сахар", "50 г"], ["Соль", "3 г"]]},
         {name: "Битая вишня", items: [["Вишня", "200 г"], ["Сахар", "50 г"], ["Соль", "3 г"]]},
@@ -51,12 +51,14 @@ const menu = [
         {name: "Соус том ям", items: ["Яйцо", "Горчица", "Подсолнечное масло", "Концентрат «Том Ям»", "Соль"]},
         {name: "Соус горчичный", items: ["Творожный сыр", "Горчица", "Трюфельное масло"]},
         {name: "Соус гриль-чиз", items: ["Яйцо", "Горчица", "Подсолнечное масло", "Основа «барбекю»", "Соль"]},
-        {name: "Соус тоннато", items: ["Яйцо", "Горчица", "Подсолнечное масло", "Тунец", "Каперсы", "Анчоусы", "Лимонный сок", "Соль"]}
+        {name: "Соус тоннато", items: ["Яйцо", "Горчица", "Подсолнечное масло", "Тунец", "Каперсы", "Анчоусы", "Лимонный сок", "Соль"]},
+        {name: "Соус манго", items: ["Пюре манго", "Сахар", "Желатин", "Апельсин", "Вода"]},
+        {name: "Соус красная смородина", items: ["Пюре красной смородины", "Клубника с/м", "Сахар", "Пектин NH", "Вода", "Тимьян"]}
       ]}
     ]
   },
   {
-    id: "bar", title: "Бар", note: "Напитки разделены по способу подачи.", subsections: [
+    id: "bar", title: "Бар", note: "", subsections: [
       {title: "Горячие напитки", cards: [
         {name: "Какао с зефирками", items: ["Шоколад — 40 г", "Молоко — 200 мл", "Зефир — 10 г"]},
         {name: "Маття-шот", items: ["Маття — 1 г", "Вода 70 °C — 70 мл"]},
@@ -72,7 +74,7 @@ const menu = [
       ]},
       {title: "Холодные напитки", cards: [
         {name: "Гляссе", items: ["Джелато — 140 г", "Фильтр-кофе — 110 мл", "Шоколадная крошка"]},
-        {name: "Айс-латте", items: ["Эспрессо", "Лед", "Молоко — 150 мл"]},
+        {name: "Айс-латте", items: ["Эспрессо", "Лед — 150 г", "Молоко — 150 мл"]},
         {name: "Айс-маття-латте", items: ["Маття — 1 г + вода — 30 г", "Лед — 150 г", "Молоко — 160 мл"]},
         {name: "Маття-тоник", items: ["Маття — 1 г + вода — 30 г", "Лед — 150 г", "Тоник — 160 мл"]},
         {name: "Наш лимонад", items: ["Минеральная вода — 100 мл", "Сахарный сироп — 100 мл", "Лимонный сок — 40 г", "Лед — 160 г", "Клюква — 20 г", "Долька лимона", "Звездочка бадьяна"]},
@@ -92,28 +94,15 @@ const menu = [
     ]
   },
   {
-    id: "desserts", title: "Десерты", note: "Сложные составы разбиты на понятные части.", desserts: [
+    id: "desserts", title: "Десерты", note: "", desserts: [
       {name: "Ирисковый торт", groups: [
         ["Бисквит", "Мука пшеничная в/с, кефир, сахар, масло растительное, меланж, разрыхлитель, сода, соль."],
         ["Крем «Ирисковый»", "Творожный сыр, карамель, сливки 33%, глюкозный сироп."],
         ["Карамель и декор", "Сахар, сливки 33%, масло сливочное, вода; арахис соленый жареный, кофе в зернах."]
       ]},
-      {name: "Тарт «Манго-Лимон»", groups: [
-        ["Корж", "Масло сливочное, сахар, сироп глюкозы, меланж, мука пшеничная в/с, кукурузный крахмал, ванильный сахар."],
-        ["Начинка", "Молоко, ваниль молотая, творожный сыр, манго, лимон, вода."]
-      ]},
-      {name: "Тарт «Черника-Чиа»", groups: [
-        ["Корж", "Масло сливочное, сахар, сироп глюкозы, меланж, мука пшеничная в/с, кукурузный крахмал, ванильный сахар."],
-        ["Начинка", "Черника, брусника, тимьян, вода, пектин NH, семена чиа, творог, сахарная пудра, роза сушеная, нейтральный гель."]
-      ]},
       {name: "Веганский кекс", groups: [["Состав", "Масло растительное, сахар, сахар тростниковый, апельсин, мука пшеничная в/с, разрыхлитель, имбирь, кардамон, яблоки, клюква сушеная."]]},
-      {name: "Вупи «Земляника»", groups: [["Бисквит", "Масло сливочное, меланж, сахар, мука пшеничная в/с, разрыхлитель, соль."], ["Крем и начинка", "Творожный сыр, сахарная пудра, клубника, брусника, сахар, пектин NH, вода, фисташка."]]},
-      {name: "Сырник", groups: [["Состав", "Творог, мука пшеничная в/с, сахар, меланж, соль, ванильный сахар."]]},
       {name: "Канеле", groups: [["Тесто", "Молоко 3,5%, масло сливочное, ваниль натуральная молотая, меланж, желток, сахар, мука пшеничная в/с."], ["Пропитка", "Ром безалкогольный."]]},
       {name: "Канеле с баварским кремом", groups: [["Канеле", "Молоко 3,5%, масло сливочное, ваниль, меланж, желток, сахар, мука пшеничная в/с, ром безалкогольный."], ["Баварский крем", "Желатин, сливки 33%, шоколад 54%."]]},
-      {name: "Соус манго", groups: [["Состав", "Пюре манго, сахар, желатин, апельсин, вода."]]},
-      {name: "Соус красная смородина", groups: [["Состав", "Пюре красной смородины, клубника с/м, сахар, пектин NH, вода, тимьян."]]},
-      {name: "Чизкейк", groups: [["Состав", "Творожный сыр, сливки 33%, меланж, желток, сахар, сироп глюкозы, лимон, ванильный сахар."]]},
       {name: "Кекс «Морковный» с кремом «Груша-Жасмин»", groups: [
         ["Бисквит", "Меланж, сахар, сахар тростниковый, мука пшеничная в/с, разрыхлитель, сироп глюкозы, кардамон, мускатный орех, масло сливочное, молоко 3,5%, морковь, семечки тыквенные."],
         ["Крем — 25 г на порцию", "Творожный сыр, масло сливочное, сахарная пудра, кордиал «Груша-Жасмин», сироп глюкозы."]
@@ -129,7 +118,6 @@ const menu = [
       {name: "Печенье с клюквой", groups: [["Состав", "Меланж, сахар, сливочное масло, хлопья овсяные, мука, корица, вяленая клюква, кунжут."]]},
       {name: "Печенье с арахисом", groups: [["Состав", "Меланж, сахар, сливочное масло, хлопья овсяные, мука, корица, соленый арахис."]]},
       {name: "Печенье шоколадное", groups: [["Состав", "Сливочное масло, меланж, сахар, мука, какао-порошок, соль, сода, шоколад в таблетках, грецкий орех."]]},
-      {name: "Брауни", groups: [["Состав", "Меланж, сахар, мука, соль, сливочное масло, шоколад 54,5%."]]},
       {name: "Картошка", groups: [["Основа", "Сгущенное молоко, сливочное масло, какао-порошок, сахарная пудра."], ["Крошка", "Хлопья овсяные, сахар, меланж, мука, корица, соленый арахис, вяленая клюква, кефир, растительное масло, сода, разрыхлитель, соль."]]},
       {name: "Кантучини", groups: [["Состав", "Мука пшеничная, банан, миндаль, масло подсолнечное, инвертный сироп, сахар, разрыхлитель."]]}
     ]
@@ -138,7 +126,11 @@ const menu = [
 
 const barIndex = menu.findIndex(section => section.id === "bar");
 const [barSection] = menu.splice(barIndex, 1);
-menu.splice(1, 0, barSection);
+menu.splice(0, 0, barSection);
+
+const teaIndex = menu.findIndex(section => section.id === "tea");
+const [teaSection] = menu.splice(teaIndex, 1);
+menu.push(teaSection);
 
 const nutrition = {
   "wraps:Кура": {kcal: "510", weight: "235", p: "40", f: "20", c: "40"},
@@ -170,6 +162,9 @@ const nutrition = {
   "porridge:Со сгущенкой из авокадо": {kcal: "637,09", weight: "410", p: "14,15", f: "29,97", c: "82,69"},
   "porridge:Со сгущенкой из тыквы": {kcal: "232,82", weight: "425", p: "7,27", f: "6,26", c: "35,95"},
 
+  "prep:Битая клубника": {kcal: "36,25", weight: "30", p: "0,16", f: "0,09", c: "8,7"},
+  "prep:Соус тоннато": {kcal: "122", weight: "20", p: "2", f: "13", c: "0,1"},
+
   "syrniki:С фисташковой пастой": {kcal: "270", weight: "210", p: "10", f: "8", c: "40"},
   "syrniki:С манговым курдом": {kcal: "330", weight: "235", p: "9", f: "10", c: "60"},
   "syrniki:Со сгущенкой из тыквы": {kcal: "404,87", weight: "245", p: "17,51", f: "10,67", c: "34,79"},
@@ -185,27 +180,70 @@ const nutrition = {
   "bar:Маття-шот": {kcal: "1,3", weight: "70", p: "0,02", f: "0,02", c: "0,26"},
   "bar:Маття-флэт": {kcal: "72,34", weight: "180", p: "3,50", f: "3,86", c: "5,9"},
   "bar:Маття-латте": {kcal: "242,88", weight: "350", p: "12,1", f: "12,8", c: "19,82"},
+  "bar:Айс-маття-латте": {kcal: "96,02", weight: "340", p: "4,66", f: "5,14", c: "7,78"},
+  "bar:Маття-тоник": {kcal: "83,95", weight: "340", p: "0,02", f: "0,02", c: "20,91"},
   "bar:Наш лимонад": {kcal: "307,3", weight: "350", p: "2,52", f: "1,06", c: "71,02"},
   "bar:Эспрессо-тоник": {kcal: "94,23", weight: "300", p: "10", f: "20", c: "23"},
   "bar:Какао с зефирками": {kcal: "383,02", weight: "240", p: "8,58", f: "22,42", c: "36,73"},
   "bar:Глинтвейн безалкогольный": {kcal: "186,46", weight: "400", p: "1,99", f: "0,9", c: "42,35"},
 
-  "desserts:Вупи «Земляника»": {kcal: "518", weight: "105", p: "7", f: "35", c: "45"},
   "desserts:Ирисковый торт": {kcal: "731", weight: "190", p: "11", f: "49", c: "61"},
   "desserts:Веганский кекс": {kcal: "252,9", weight: "125", p: "2,8", f: "8,5", c: "40"},
-  "desserts:Тарт «Черника-Чиа»": {kcal: "324", weight: "130", p: "5,7", f: "16,2", c: "39,1"},
-  "desserts:Тарт «Манго-Лимон»": {kcal: "283", weight: "130", p: "5,1", f: "11", c: "41,1"},
   "desserts:Канеле с баварским кремом": {kcal: "238,4", weight: "50", p: "4,2", f: "9,3", c: "30,5"},
   "desserts:Канеле": {kcal: "154,6", weight: "50", p: "4,1", f: "8,8", c: "30,2"},
-  "desserts:Чизкейк": {kcal: "341", weight: "120", p: "6,7", f: "17,6", c: "38"},
   "desserts:Печенье с клюквой": {kcal: "238,9", weight: "57", p: "5,5", f: "8,2", c: "38,1"},
   "desserts:Печенье шоколадное": {kcal: "269,7", weight: "57", p: "3,1", f: "13,9", c: "32,6"},
   "desserts:Печенье с арахисом": {kcal: "262,3", weight: "58", p: "7,5", f: "13,1", c: "30,5"},
-  "desserts:Брауни": {kcal: "326,4", weight: "70", p: "4,3", f: "15,8", c: "40,6"},
-  "desserts:Картошка": {kcal: "327", weight: "73", p: "4,6", f: "19,7", c: "31,2"}
+  "desserts:Картошка": {kcal: "327", weight: "73", p: "4,6", f: "19,7", c: "31,2"},
+  "desserts:Тарталетка «Манго-Лимон»": {kcal: "283", weight: "80", p: "5,1", f: "11", c: "41,1"},
+  "desserts:Тарталетка «Черника-Чиа»": {kcal: "324", weight: "80", p: "5,7", f: "16,2", c: "39,1"}
 };
 
 const esc = value => String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[char]));
+const detailRefs = {
+  "Сырник": ["Творог", "Мука пшеничная в/с", "Сахар", "Меланж", "Соль", "Ванильный сахар"]
+};
+const detailFor = item => detailRefs[item] ? item : null;
+const sauceCards = menu
+  .find(section => section.id === "prep")
+  ?.subsections.find(subsection => subsection.title === "Соусы")
+  ?.cards || [];
+const sauceByName = Object.fromEntries(sauceCards.map(sauce => [sauce.name, sauce.items]));
+const sauceAliases = {
+  "Соус тоннато": "Соус тоннато",
+  "Соус гриль-чиз": "Соус гриль-чиз",
+  "Соус том ям": "Соус том ям",
+  "Горчичный соус": "Соус горчичный",
+  "Соус горчичный": "Соус горчичный",
+  "Соус манго": "Соус манго",
+  "Соус красная смородина": "Соус красная смородина",
+  "Соус красной смородины": "Соус красная смородина"
+};
+const itemName = item => String(item).split(" — ")[0].trim();
+const sauceFor = item => {
+  const name = itemName(item);
+  return sauceByName[sauceAliases[name] || name] ? sauceAliases[name] || name : null;
+};
+const ingredientSearchParts = items => items.flatMap(item => {
+  const sauceName = sauceFor(item);
+  return sauceName ? [item, sauceName, ...sauceByName[sauceName]] : [item];
+});
+const renderIngredient = item => {
+  const sauceName = sauceFor(item);
+  if (!sauceName) return esc(item);
+  return `<details class="sauce-ref">
+    <summary>${esc(item)}</summary>
+    <ul>${sauceByName[sauceName].map(part => `<li>${esc(part)}</li>`).join("")}</ul>
+  </details>`;
+};
+const renderDetailRef = name => {
+  const detailName = detailFor(name);
+  if (!detailName) return esc(name);
+  return `<details class="detail-ref">
+    <summary>${esc(name)}</summary>
+    <ul>${detailRefs[detailName].map(part => `<li>${esc(part)}</li>`).join("")}</ul>
+  </details>`;
+};
 const nutritionBlock = (sectionId, name) => {
   const data = nutrition[`${sectionId}:${name}`];
   if (!data) return "";
@@ -223,20 +261,20 @@ const nutritionBlock = (sectionId, name) => {
       </div>
     </details>`;
 };
-const listCard = (card, sectionId, peach = false) => `
-  <article class="card ${peach ? "card--peach" : ""}" data-search="${esc([card.name, ...card.items].join(" ").toLowerCase())}">
-    <div class="card__body"><h3>${esc(card.name)}</h3>${nutritionBlock(sectionId, card.name)}<ul>${card.items.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
+const listCard = (card, sectionId) => `
+  <article class="card card--list" data-card-type="list" data-search="${esc([card.name, ...ingredientSearchParts(card.items)].join(" ").toLowerCase())}">
+    <div class="card__body"><h3>${esc(card.name)}</h3>${nutritionBlock(sectionId, card.name)}<ul>${card.items.map(x => `<li>${renderIngredient(x)}</li>`).join("")}</ul></div>
   </article>`;
 const recipeCard = (recipe, sectionId) => `
-  <article class="card" data-search="${esc([recipe.name, ...recipe.items.flat()].join(" ").toLowerCase())}">
+  <article class="card card--recipe" data-card-type="recipe" data-search="${esc([recipe.name, ...recipe.items.flat()].join(" ").toLowerCase())}">
     ${recipe.image ? `<img class="card__image" src="${recipe.image}" alt="${esc(recipe.caption || recipe.name)}">` : ""}
     <div class="card__body"><h3>${esc(recipe.name)}</h3>${nutritionBlock(sectionId, recipe.name)}
-      <dl class="ingredients">${recipe.items.map(([name, qty]) => `<div><dt>${esc(name)}</dt><dd>${esc(qty)}</dd></div>`).join("")}</dl>
+      <dl class="ingredients">${recipe.items.map(([name, qty]) => `<div><dt>${renderDetailRef(name)}</dt><dd>${esc(qty)}</dd></div>`).join("")}</dl>
       ${recipe.caption ? `<p class="card__caption">${esc(recipe.caption)}</p>` : ""}
     </div>
   </article>`;
 const dessertCard = dessert => `
-  <article class="card card--peach" data-search="${esc([dessert.name, ...dessert.groups.flat()].join(" ").toLowerCase())}">
+  <article class="card card--dessert" data-card-type="dessert" data-search="${esc([dessert.name, ...dessert.groups.flat()].join(" ").toLowerCase())}">
     <div class="card__body"><h3>${esc(dessert.name)}</h3>${nutritionBlock("desserts", dessert.name)}
       <div class="groups">${dessert.groups.map(([name, text]) => `<div class="group"><strong>${esc(name)}</strong><p>${esc(text)}</p></div>`).join("")}</div>
     </div>
@@ -253,12 +291,12 @@ function renderSection(section) {
   } else if (section.recipes) {
     content = `<div class="grid ${section.recipes.length === 3 ? "grid--three" : ""}">${section.recipes.map(x => recipeCard(x, section.id)).join("")}</div>`;
   } else if (section.subsections) {
-    content = section.subsections.map(sub => `<div class="subsection"><h3>${esc(sub.title)}</h3><div class="grid ${((sub.cards || sub.recipes).length > 4) ? "grid--three" : ""}">${sub.cards ? sub.cards.map(x => listCard(x, section.id, section.id === "prep")).join("") : sub.recipes.map(x => recipeCard(x, section.id)).join("")}</div></div>`).join("");
+    content = section.subsections.map(sub => `<div class="subsection"><h3>${esc(sub.title)}</h3><div class="grid ${((sub.cards || sub.recipes).length > 4) ? "grid--three" : ""}">${sub.cards ? sub.cards.map(x => listCard(x, section.id)).join("") : sub.recipes.map(x => recipeCard(x, section.id)).join("")}</div></div>`).join("");
   } else if (section.desserts) {
     content = `<div class="grid">${section.desserts.map(dessertCard).join("")}</div>`;
   }
   return `<section class="section" id="${section.id}" data-section>
-    <div class="section__head"><div><p class="eyebrow">Раздел</p><h2>${esc(section.title)}</h2><p class="section__note">${esc(section.note || "")}</p></div><span class="section__count"></span></div>
+    <div class="section__head"><div><p class="eyebrow">Раздел</p><h2>${esc(section.title)}</h2></div><span class="section__count"></span></div>
     ${content}
   </section>`;
 }
