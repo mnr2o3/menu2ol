@@ -305,3 +305,9 @@ tbody tr:nth-child(even) { background: #f6f4ed; }
   .card { break-inside: avoid; box-shadow: none; }
   body { background: white; }
 }
+
+.steps { margin: 14px 0 0; border-top: 1px solid #e7e2d8; }
+.steps summary { padding: 8px 0 4px; color: var(--green); cursor: pointer; font-size: .83rem; font-weight: 800; }
+.steps ol { margin: 4px 0 0; padding-left: 1.3em; font-size: .9rem; }
+.steps li + li { margin-top: 4px; }
+.card__note { margin: 12px 0 0; padding: 9px 12px; border-radius: 10px; background: var(--peach-soft); font-size: .88rem; }
